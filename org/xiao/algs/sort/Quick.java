@@ -60,6 +60,7 @@ public class Quick {
 
     /**
      * 选择第K小的元素
+     * 可以通过快速排序的切分来查找中位数
      */
     public static Comparable select(Comparable[] a, int k) {
         if (k < 0 || k >= a.length) {

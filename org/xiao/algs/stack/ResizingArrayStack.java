@@ -19,6 +19,7 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
 	/**
 	 * 创建一个空栈
 	 */
+	@SuppressWarnings("unchecked")
 	public ResizingArrayStack() {
 		a = (Item[]) new Object[2];
 	}
@@ -38,6 +39,7 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
 	}
 
 	// 动态调整栈的大小
+	@SuppressWarnings("unchecked")
 	private void resize(int capacity) {
 		// 将栈移动到一个大小为capacity的新数组
 		assert capacity >= N;
@@ -113,9 +115,7 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
 	}
 
 	/**
-	 * 测试
-	 * more tobe.txt
-	 * to be or not to - be - - that - - - is
+	 * 测试 more tobe.txt to be or not to - be - - that - - - is
 	 */
 	public static void main(String[] args) {
 		ResizingArrayStack<String> s = new ResizingArrayStack<String>();

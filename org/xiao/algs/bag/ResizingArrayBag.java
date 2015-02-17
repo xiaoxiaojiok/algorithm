@@ -18,6 +18,7 @@ public class ResizingArrayBag<Item> implements Iterable<Item> {
 	/**
 	 * 初始化一个空背包
 	 */
+	@SuppressWarnings("unchecked")
 	public ResizingArrayBag() {
 		a = (Item[]) new Object[2];
 	}
@@ -37,6 +38,7 @@ public class ResizingArrayBag<Item> implements Iterable<Item> {
 	}
 
 	// 重新调整背包大小
+	@SuppressWarnings("unchecked")
 	private void resize(int capacity) {
 		assert capacity >= N;
 		Item[] temp = (Item[]) new Object[capacity];

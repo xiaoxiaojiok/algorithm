@@ -1,6 +1,7 @@
 package org.xiao.algs.test;
 
 import org.xiao.algs.io.StdOut;
+import org.xiao.algs.sort.Heap;
 import org.xiao.algs.sort.Insertion;
 import org.xiao.algs.sort.Merge;
 import org.xiao.algs.sort.Quick;
@@ -46,7 +47,7 @@ public class SortCompare {
 			Quick.sort(a);
 		}
 		if (alg.equals(HEAP_SORT)) {
-			Insertion.sort(a);
+			Heap.sort(a);
 		}
 		return timer.elapsedTime();
 	}

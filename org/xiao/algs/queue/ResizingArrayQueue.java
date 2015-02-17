@@ -33,6 +33,7 @@ public class ResizingArrayQueue<Item> implements Iterable<Item> {
 	/**
 	 * 创建一个空的队列
 	 */
+	@SuppressWarnings("unchecked")
 	public ResizingArrayQueue() {
 		q = (Item[]) new Object[2];
 	}
@@ -52,6 +53,7 @@ public class ResizingArrayQueue<Item> implements Iterable<Item> {
 	}
 
 	// 重新调整队列的大小
+	@SuppressWarnings("unchecked")
 	private void resize(int max) {
 		assert max >= N;
 		Item[] temp = (Item[]) new Object[max];
@@ -129,9 +131,7 @@ public class ResizingArrayQueue<Item> implements Iterable<Item> {
 	}
 
 	/**
-	 * 测试
-	 * more tobe.txt
-	 * to be or not to - be - - that - - - is
+	 * 测试 more tobe.txt to be or not to - be - - that - - - is
 	 */
 	public static void main(String[] args) {
 		ResizingArrayQueue<String> q = new ResizingArrayQueue<String>();
