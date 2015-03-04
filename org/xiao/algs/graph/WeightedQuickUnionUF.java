@@ -1,4 +1,4 @@
-package org.xiao.algs.tree;
+package org.xiao.algs.graph;
 
 import org.xiao.algs.io.StdIn;
 import org.xiao.algs.io.StdOut;
